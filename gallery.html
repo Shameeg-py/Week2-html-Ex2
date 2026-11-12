@@ -7,90 +7,94 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Gallery</h1>
-  <input type="radio" name="category-filter" id="all" checked>
-  <input type="radio" name="category-filter" id="landscape">
-  <input type="radio" name="category-filter" id="portrait">
-  <input type="radio" name="category-filter" id="architecture">
-  <div class="button">
-    <button>All</button>
-    <button>Landscape</button>
-    <button>Portraits</button>
-    <button>Architecture</button>
-  </div>
+  <h1><u>Snowey Gallery</u></h1>
+
+<div class="filter-container">
+    
+  <input type="radio" name="category-filter" id="filter-all" checked>
+  <label for="filter-all" class="filter-btn">All</label>
+  <input type="radio" name="category-filter" id="filter-landscape">
+  <label for="filter-landscape" class="filter-btn">Landscape</label>
+  <input type="radio" name="category-filter" id="filter-portrait">
+  <label for="filter-portrait" class="filter-btn">Portrait</label>
+  <input type="radio" name="category-filter" id="filter-architecture">
+  <label for="filter-architecture" class="filter-btn">Architecture</label>
+    
+
   <main class="image-grid">
-    <article class="image-card">
+    <article class="image-card" data-category="landscape">
       <img src="https://images.pexels.com/photos/19430186/pexels-photo-19430186.jpeg" alt="">
       <h3>Title</h3>
-      <h4>Catergory:</h4>
+      <h4>Catergory: Landscape</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error nam dolorem veniam eligendi temporibus nobis sequi, exercitationem odio illo totam cum hic ipsam, iste voluptatem optio reprehenderit sunt voluptates!</p>
     </article>
-      <article class="image-card">
+      <article class="image-card" data-category="portrait">
       <img src="https://images.pexels.com/photos/6609909/pexels-photo-6609909.jpeg" alt="">
       <h3>Title</h3>
-      <h4>Catergory:</h4>
+      <h4>Catergory: Portrait</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error nam dolorem veniam eligendi temporibus nobis sequi, exercitationem odio illo totam cum hic ipsam, iste voluptatem optio reprehenderit sunt voluptates!</p>
     </article>
-        <article class="image-card">
+        <article class="image-card" data-category="architecture">
       <img src="https://images.pexels.com/photos/4324353/pexels-photo-4324353.jpeg" alt="">
       <h3>Title</h3>
-      <h4>Catergory:</h4>
+      <h4>Catergory: Architecture</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error nam dolorem veniam eligendi temporibus nobis sequi, exercitationem odio illo totam cum hic ipsam, iste voluptatem optio reprehenderit sunt voluptates!</p>
     </article>
-        <article class="image-card">
+        <article class="image-card" data-category="landscape">
       <img src="https://images.pexels.com/photos/15363406/pexels-photo-15363406.jpeg" alt="">
       <h3>Title</h3>
-      <h4>Catergory:</h4>
+      <h4>Catergory: Landscape</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error nam dolorem veniam eligendi temporibus nobis sequi, exercitationem odio illo totam cum hic ipsam, iste voluptatem optio reprehenderit sunt voluptates!</p>
     </article>
-        <article class="image-card">
+        <article class="image-card" data-category="portrait">
       <img src="https://images.pexels.com/photos/10797240/pexels-photo-10797240.jpeg" alt="">
       <h3>Title</h3>
-      <h4>Catergory:</h4>
+      <h4>Catergory: Portrait</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error nam dolorem veniam eligendi temporibus nobis sequi, exercitationem odio illo totam cum hic ipsam, iste voluptatem optio reprehenderit sunt voluptates!</p>
     </article>
-        <article class="image-card">
+        <article class="image-card" data-category="architecture">
       <img src="https://images.pexels.com/photos/19962564/pexels-photo-19962564.jpeg" alt="">
       <h3>Title</h3>
-      <h4>Catergory:</h4>
+      <h4>Catergory: Architecture</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error nam dolorem veniam eligendi temporibus nobis sequi, exercitationem odio illo totam cum hic ipsam, iste voluptatem optio reprehenderit sunt voluptates!</p>
     </article>
-        <article class="image-card">
+        <article class="image-card" data-category="landscape">
       <img src="https://images.pexels.com/photos/14406133/pexels-photo-14406133.jpeg" alt="">
       <h3>Title</h3>
-      <h4>Catergory:</h4>
+      <h4>Catergory: Landscape</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error nam dolorem veniam eligendi temporibus nobis sequi, exercitationem odio illo totam cum hic ipsam, iste voluptatem optio reprehenderit sunt voluptates!</p>
     </article>
-        <article class="image-card">
+        <article class="image-card" data-category="portrait">
       <img src="https://images.pexels.com/photos/15875948/pexels-photo-15875948.jpeg" alt="">
       <h3>Title</h3>
-      <h4>Catergory:</h4>
+      <h4>Catergory: Portrait</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error nam dolorem veniam eligendi temporibus nobis sequi, exercitationem odio illo totam cum hic ipsam, iste voluptatem optio reprehenderit sunt voluptates!</p>
     </article>
-        <article class="image-card">
+        <article class="image-card" data-category="architecture">
       <img src="https://images.pexels.com/photos/13015831/pexels-photo-13015831.jpeg" alt="">
       <h3>Title</h3>
-      <h4>Catergory:</h4>
+      <h4>Catergory: Architecture</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error nam dolorem veniam eligendi temporibus nobis sequi, exercitationem odio illo totam cum hic ipsam, iste voluptatem optio reprehenderit sunt voluptates!</p>
     </article>
-        <article class="image-card">
+        <article class="image-card" data-category="portrait">
       <img src="https://images.pexels.com/photos/30611613/pexels-photo-30611613.jpeg" alt="">
       <h3>Title</h3>
-      <h4>Catergory:</h4>
+      <h4>Catergory: Portrait</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error nam dolorem veniam eligendi temporibus nobis sequi, exercitationem odio illo totam cum hic ipsam, iste voluptatem optio reprehenderit sunt voluptates!</p>
     </article>
-        <article class="image-card">
+        <article class="image-card" data-category="landscape">
       <img src="https://images.pexels.com/photos/29673863/pexels-photo-29673863.jpeg" alt="">
       <h3>Title</h3>
-      <h4>Catergory:</h4>
+      <h4>Catergory: Landscape</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error nam dolorem veniam eligendi temporibus nobis sequi, exercitationem odio illo totam cum hic ipsam, iste voluptatem optio reprehenderit sunt voluptates!</p>
     </article>
-        <article class="image-card">
+        <article class="image-card" data-category="architecture">
       <img src="https://images.pexels.com/photos/35672511/pexels-photo-35672511.jpeg" alt="">
       <h3>Title</h3>
-      <h4>Catergory:</h4>
+      <h4>Catergory: Architecture</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error nam dolorem veniam eligendi temporibus nobis sequi, exercitationem odio illo totam cum hic ipsam, iste voluptatem optio reprehenderit sunt voluptates!</p>
     </article>
+  </div>
   </main>
 </body>
 </html>

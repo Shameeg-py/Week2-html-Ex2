@@ -1,49 +1,28 @@
-
+body{
+  background-color: #0f172a;
+}
 h1{
-  color: aquamarine; 
-  text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+  color: #f8fafc; 
   text-align: center;
 }
 
 .image-grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-}
-
-.button{
-  display: flex;
-  flex-direction: top;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: white;
+  gap: 0.5rem;
+  border: 1px solid #334155;
+  transform: translateY(30px);
+  overflow: hidden;
 }
 
 
-
-button{
-  border-radius: 25px;
-  background-color: rgb(217, 219, 244);
-  padding: 9px;
-  margin: 5px;
-  cursor: pointer;
-  border: none;
-}
-
-button:hover{
-  background-color:rgb(194, 197, 244) ;
-}
-
-.image-card{
+article{
   display: grid;
   cursor: pointer;
+  transform: translatey(20px);
 }
 article:hover{
-  transform: translate(-6px);
-  background
-  transition-delay: 0.3s;  
+  transform: translatey(1px); 
 }
 
 img{
@@ -52,28 +31,88 @@ img{
 }
 
 
+input{
+  display: none;
+}
 
+.filter-btn{
+  padding: 12px 20px;
+ border: 1px solid #334155;
+ border-radius: 30px;
+ cursor: pointer;
+ background-color: #38bdf8;
 
+}
 
+.filter-btn:hover{
+  background-color: rgb(61, 230, 230);
+}
 
+#filter-all:checked ~ label[for="filter-all"],
+#filter-landscape:checked ~ label[for="filter-landscape"],
+#filter-portrait:checked ~ label[for="filter-portrait"],
+#filter-architecture:checked ~ label[for="filter-architecture"] {
+  background-color: #333;
+  color: #fff;
+}
+.image-grid article {
+  display: none;
+  margin: 1px;
+  padding: 10px;
+  border: 1px solid #334155;
+}
 
+#filter-all:checked ~ .image-grid article {
+  display: block;
+}
 
+#filter-landscape:checked ~ .image-grid article[data-category="landscape"] {
+  display: block;
+}
 
+#filter-portrait:checked ~ .image-grid article[data-category="portrait"] {
+  display: block;
+}
 
+#filter-architecture:checked ~ .image-grid article[data-category="architecture"] {
+  display: block;
+}
 
+.image-card{
+  position: relative;
+  overflow: hidden;
+}
 
-
-
-
-
+.image-card p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: #0f172a;
+  color: #fff;
+  transform: translatey(100%);
+  transition: transform 0.3s ease;
+}
+.image-card{
+  color: white;
+}
+.image-card p:hover{
+  transform: translatey(0);
+  
+}
 
 
 
 
 @media(max-width: 1024px){
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
 }
 
 @media(max-width:600px){
-
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.5rem;
 }
